@@ -5,6 +5,7 @@ import {SidersComponent} from "../core/siders/siders.component";
 import {HeaderComponent} from "../core/header/header.component";
 import {ProductoModule} from "./producto/producto.module";
 import {PedidoModule} from "./pedido/pedido.module";
+import {AlmacenModule} from "./almacen/almacen.module";
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import {PedidoModule} from "./pedido/pedido.module";
   imports: [
     DashboardRoutingModule,
     ProductoModule,
+    AlmacenModule,
     PedidoModule
   ]
 })
