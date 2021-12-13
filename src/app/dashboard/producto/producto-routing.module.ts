@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import {RouterModule, Routes} from "@angular/router";
 import {ProductoCrearComponent} from "./producto-crear/producto-crear.component";
 import {ProductoListarComponent} from "./producto-listar/producto-listar.component";
