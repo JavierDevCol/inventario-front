@@ -4,6 +4,7 @@ import {DashboardRoutingModule} from "./dashboard.routing.module";
 import {SidersComponent} from "../core/siders/siders.component";
 import {HeaderComponent} from "../core/header/header.component";
 import {ProductoModule} from "./producto/producto.module";
+import {PedidoModule} from "./pedido/pedido.module";
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import {ProductoModule} from "./producto/producto.module";
   ],
   imports: [
     DashboardRoutingModule,
-    ProductoModule
+    ProductoModule,
+    PedidoModule
   ]
 })
 export class DashboardModule {

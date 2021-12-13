@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {Observable} from "rxjs";
+import {Pedido} from "../shared/model/pedido";
+import {PedidoService} from "../shared/service/pedido.service";
 
 @Component({
   selector: 'app-pedido-listar',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PedidoListarComponent implements OnInit {
 
-  constructor() { }
+  public listaPedidos: Observable<Pedido[]>;
 
-  ngOnInit(): void {
+  constructor(protected pedidoService: PedidoService) { }
+
+  ngOnInit() {
+    this.listaPedidos = this.pedidoService.consultar();
   }
 
 }
